@@ -1,0 +1,32 @@
+{
+    "es":{
+        "title":"Lista de anuncios",
+        "subtitle":"Listando",
+        "ejemplos":"Ejemplos",
+        "nombre":"Nombre",
+        "venta":"Venta",
+        "precio":"Precio",
+        "foto":"Foto",
+        "todos":"Todos",
+        "paginado":"Paginado",
+        "ordAsc":"Ordenado por precio ascendente",
+        "ordDesc":"Ordenado por precio descendente",
+        "tag":"Con tag mobile",
+        "backHome":"Volver a la home"
+    },
+    "en":{
+        "title":"Announcement list",
+        "subtitle":"Listing",
+        "ejemplos":"Examples",
+        "nombre":"Name",
+        "venta":"Sale",
+        "precio":"Price",
+        "foto":"Photo",
+        "todos":"All",
+        "paginado":"Paginated",
+        "ordAsc":"Sort by price ascending",
+        "ordDesc":"Sort by price descending",
+        "tag":"With tag mobile",
+        "backHome":"Back to home"
+    }
+}

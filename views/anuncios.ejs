@@ -1,0 +1,60 @@
+<%- include('_header') %>
+
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="/" class="navbar-brand">Nodeapi</a>
+      <div><a href="?locale=es">ES</a> | <a href="?locale=en">EN</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1><%= idioma.title %></h1>
+      <p class="lead"><%= idioma.subtitle %>: <%= anuncios.length %> de <%= total %></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table table-hover">
+        <thead><tr>
+          <th><%= idioma.nombre %></th>
+          <th><%= idioma.venta %></th>
+          <th style="text-align: right"><%= idioma.precio %></th>
+          <th><%= idioma.foto %></th>
+          <th>Tags</th>
+          <th>#</th>
+        </tr></thead>
+        <tbody>
+<% anuncios.forEach(anuncio => { %>
+          <tr>
+            <td><%= anuncio.nombre %></td>
+            <td><%= anuncio.venta ? 'Si' : 'No' %></td>
+            <td style="text-align: right"><%= anuncio.precio / 100 %>€</td>
+            <td><img src="<%= anuncio.foto %>"></td>
+            <td><%= anuncio.tags %></td>
+            <td><%= anuncio._id %></td>
+          </tr>
+<% }) %>
+        </tbody>
+      </table>
+
+      <p><%= idioma.ejemplos %>:</p>
+      <ul>
+        <li><a href="?"><%= idioma.todos %> (max. 1000)</a></li>
+        <li><a href="?start=0&limit=2"><%= idioma.paginado %></a></li>
+        <li><a href="?sort=precio"><%= idioma.ordAsc %></a></li>
+        <li><a href="?sort=-precio"><%= idioma.ordDesc %></a></li>
+        <li><a href="?tag=mobile"><%= idioma.tag %></a></li>
+      </ul>
+
+    </div>
+  </div>
+
+  <a href="/"><%= idioma.backHome %></a>
+
+</div>
+<%- include('_footer') %>
