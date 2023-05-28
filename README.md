@@ -1,8 +1,9 @@
-# Practica-Api-Node.js-MongoDB
+# Practica Avanzada-Api-Node.js-MongoDB. 
 
-## NodePop
 
-[Demo](/anuncios) of the methods (this link works only if you run the project)
+
+
+
 
 [Random images module](https://www.npmjs.com/package/practica-random) Bonus Track. npm Module to get Random images
 
