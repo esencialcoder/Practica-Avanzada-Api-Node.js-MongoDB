@@ -1,10 +1,22 @@
 # Nodepop 
 
 
+## Bonus Track
 
-### URL npm.js / Module to get Random images 
+ URL npm.js / Module to get Random images 
 
 [Random images module](https://www.npmjs.com/package/practica-random) 
+
+    const getRandomImage = require('practica-random');
+
+    async function prueba () {
+      console.log(await getRandomImage());
+    }
+
+    prueba();
+
+ 
+    
 
 
 ## Deploy
@@ -34,9 +46,7 @@ To start in development mode:
 To start Core Server:
 
     npm run cote
-## Test
 
-    npm test 
 
 ## ESLint
 
@@ -47,7 +57,7 @@ To start Core Server:
 ### Base Path
 
 The API can be used with the path:
-[API V1](/apiv1/anuncios)
+[API V1](http:localhost:3000/api/anuncios)
 
 ### Error example
 
